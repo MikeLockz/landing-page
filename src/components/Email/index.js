@@ -1,6 +1,6 @@
 import React from 'react'
 import addToMailchimp from 'gatsby-plugin-mailchimp'
-import { Box, Field, Label, Control, Input, Button } from 'bloomer'
+import { Columns, Column, Box, Field, FieldLabel, FieldBody, Label, Control, Input, Button } from 'bloomer'
 
 export default class AppEmail extends React.Component {
   constructor() {
@@ -45,28 +45,36 @@ export default class AppEmail extends React.Component {
 
   render() {
     return (
-      <Box>
-        <form onSubmit={({ target }) => this._handleSubmit( target )}>
-          <Field isGrouped>
-            <Label>Email</Label>
-            <Control>
-              <Input
-                onChange={({ target }) => this._handleEmailChange(target)}
-                type="email"
-                placeholder="name@example.com"
-                name="email"
-                id="email"
-              />
-            </Control>
+      <Columns isCentered>
+        <Column isSize='1/3'>
+          <Box>
+            <form onSubmit={({ target }) => this._handleSubmit( target )}>
+              <Field isHorizontal>
+                <FieldLabel isNormal>
+                  <Label>Email</Label>
+                </FieldLabel>
+                <FieldBody>
+                  <Control>
+                    <Input
+                      onChange={({ target }) => this._handleEmailChange(target)}
+                      type="email"
+                      placeholder="name@example.com"
+                      name="email"
+                      id="email"
+                    />
+                  </Control>
 
-            <Control>
-              <Button isColor="primary" type="submit">
-                Submit
-              </Button>
-            </Control>
-          </Field>
-        </form>
-      </Box>
+                  <Control>
+                    <Button isColor="primary" type="submit">
+                      Submit
+                    </Button>
+                  </Control>
+                </FieldBody>
+              </Field>
+            </form>
+          </Box>
+        </Column>
+      </Columns>
     )
   }
 }

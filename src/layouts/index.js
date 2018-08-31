@@ -34,7 +34,7 @@ const TemplateWrapper = ({ children }) => (
           <Tabs isAlign="centered">
             <TabList>
               <Tab>
-                <TabLink>And this at the bottom</TabLink>
+                <TabLink>website.com</TabLink>
               </Tab>
             </TabList>
           </Tabs>

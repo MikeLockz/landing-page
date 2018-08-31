@@ -6,15 +6,7 @@ const AppHeader = () => (
   <Container>
     <Tabs isAlign="centered">
       <TabList>
-        <Tab>
-          <TabLink>This is always at the top</TabLink>
-        </Tab>
-        <Tab>
-          <Link to="/">Home</Link>
-        </Tab>
-        <Tab>
-          <Link to="/page-2/">Go to page 2</Link>
-        </Tab>
+      
       </TabList>
     </Tabs>
   </Container>

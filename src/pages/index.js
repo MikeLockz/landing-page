@@ -6,11 +6,8 @@ import AppEmail from '../components/Email'
 
 const IndexPage = () => (
   <Container hasTextAlign="centered">
-    <Title isSize="1">Gatsby + Bulma & Bloomer</Title>
-    <Title isSize="3">
-      Easy <strong>vertical centering</strong> in <strong>fullscreen</strong>
-    </Title>
-    <Title isSize="4">Include any content you want, it's always centered</Title>
+    <Title isSize="1">Landing Page</Title>
+    <Title isSize="3"><em>Launching October 2018</em></Title>
 
     <AppEmail></AppEmail>
 
