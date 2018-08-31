@@ -32,7 +32,8 @@ export default class AppEmail extends React.Component {
       .then(data => {
         // I recommend setting data to React state
         // but you can do whatever you want (including ignoring this `then()` altogether)
-        console.log('received: ' + data)
+        console.log('received: ')
+        console.dir( data )
         this.state.submitted = true
       })
       .catch(() => {
@@ -45,7 +46,7 @@ export default class AppEmail extends React.Component {
   render() {
     return (
       <Box>
-        <form onSubmit={({ target }) => this._handleSubmit(target)}>
+        <form onSubmit={({ target }) => this._handleSubmit( target )}>
           <Field isGrouped>
             <Label>Email</Label>
             <Control>
