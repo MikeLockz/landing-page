@@ -31,7 +31,7 @@ const TemplateWrapper = ({ children }) => (
 
       <HeroFooter>
         <Container>
-          <Tabs isAlign="centered">
+          <Tabs hasTextAlign='center'>
             <TabList>
               <Tab>
                 <TabLink>website.com</TabLink>

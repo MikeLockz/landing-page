@@ -3,9 +3,11 @@ import { Footer, Container, Content, Columns, Column, Icon, Tabs, TabList, Tab, 
 
 const AppFooter = () => (
   <Footer id="footer">
-    <Container isAlign="centered">
+    <Container hasTextAlign="right">
       <p>
-          <a>Learn more</a>
+          <a>Careers</a> |
+          <a>News</a> |
+          <a>Social</a>
       </p>
     </Container>
   </Footer>

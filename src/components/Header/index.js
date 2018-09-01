@@ -4,9 +4,9 @@ import { Container, Tabs, TabList, Tab, TabLink } from 'bloomer'
 
 const AppHeader = () => (
   <Container>
-    <Tabs isAlign="centered">
+    <Tabs hasTextAlign="centered">
       <TabList>
-      
+
       </TabList>
     </Tabs>
   </Container>
