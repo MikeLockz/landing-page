@@ -1,0 +1,9 @@
+.hero-head {
+  position: relative;
+}
+
+#consensys-circle {
+  position: absolute;
+  top: -400px;
+  right: -400px;
+}

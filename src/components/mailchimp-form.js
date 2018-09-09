@@ -83,7 +83,7 @@ export default class AppEmail extends React.Component {
               </Control>
 
               <Control>
-                <Button isColor='primary' type='submit'>
+                <Button isColor='dark' type='submit'>
                   Sign Up
                 </Button>
               </Control>
