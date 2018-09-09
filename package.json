@@ -13,8 +13,10 @@
     "gatsby-plugin-mailchimp": "^3.0.0",
     "gatsby-plugin-react-helmet": "^2.0.8",
     "gatsby-plugin-sass": "1.0.19",
+    "react-fontawesome": "^1.6.1",
     "react-helmet": "^5.2.0",
-    "react-mailchimp-subscribe": "^2.0.2"
+    "react-mailchimp-subscribe": "^2.0.2",
+    "typeface-roboto": "^0.0.54"
   },
   "keywords": [
     "gatsby"

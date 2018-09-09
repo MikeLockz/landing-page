@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import 'font-awesome/css/font-awesome.css'
+require('typeface-roboto')
 import './all.sass'
 import config from '../meta/config'
 
@@ -15,7 +15,10 @@ import {
   TabList,
   Tab,
   TabLink,
+  Title,
 } from 'bloomer'
+
+import EmailCaptureForm from '../components/email-capture-form'
 import AppHeader from '../components/Header'
 import AppFooter from '../components/Footer'
 
@@ -51,25 +54,17 @@ const TemplateWrapper = ({ children }) => (
       <meta name='twitter:image' content={config.siteImage} />
     </Helmet>
 
-    <Hero isFullHeight isColor="primary">
+    <Hero isColor="primary">
       <HeroHeader>
         <AppHeader />
       </HeroHeader>
 
       <HeroBody>{children()}</HeroBody>
 
-      <HeroFooter>
-        <Container>
-          <Tabs hasTextAlign='center'>
-            <TabList>
-              <Tab>
-                <TabLink>website.com</TabLink>
-              </Tab>
-            </TabList>
-          </Tabs>
-        </Container>
-      </HeroFooter>
     </Hero>
+
+    <EmailCaptureForm />
+
     <AppFooter />
   </div>
 )

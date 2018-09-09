@@ -19,12 +19,8 @@ export default class AppEmail extends React.Component {
       msg: '',
     }
   }
-  // Since `addToMailchimp` returns a promise, you
-  // can handle the response in two different ways:
+
   _handleEmailChange({ value }) {
-    /**
-     * Validate User's input first
-     */
     this.setState({
       email: value,
       status: 'validating',
@@ -32,10 +28,6 @@ export default class AppEmail extends React.Component {
     console.log('email: ', value)
   }
 
-  // Note that you need to send an email & optionally, listFields
-  // these values can be pulled from React state, form fields,
-  // or wherever.  (Personally, I recommend storing in state).
-  //
   _handleSubmit = e => {
     e.preventDefault()
 
@@ -46,8 +38,6 @@ export default class AppEmail extends React.Component {
 
     addToMailchimp(this.state.email)
       .then(data => {
-        // I recommend setting data to React state
-        // but you can do whatever you want (including ignoring this `then()` altogether)
         console.log('received: ')
         console.dir(data)
 
@@ -67,7 +57,6 @@ export default class AppEmail extends React.Component {
       .catch(() => {
         // unnecessary because Mailchimp only ever
         // returns a 200 status code
-        // see below for how to handle errors
       })
   }
 
@@ -86,15 +75,15 @@ export default class AppEmail extends React.Component {
               <Control>
                 <Input
                   onChange={({ target }) => this._handleEmailChange(target)}
-                  type="email"
-                  placeholder="name@example.com"
-                  name="email"
-                  id="email"
+                  type='email'
+                  placeholder='name@example.com'
+                  name='email'
+                  id='email'
                 />
               </Control>
 
               <Control>
-                <Button isColor="primary" type="submit">
+                <Button isColor='primary' type='submit'>
                   Sign Up
                 </Button>
               </Control>

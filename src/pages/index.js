@@ -1,15 +1,14 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import { Container, Title, Box } from 'bloomer'
-import EmailCaptureForm from '../components/email-capture-form'
+import { Container, Title } from 'bloomer'
 
 const IndexPage = () => (
-  <Container hasTextAlign="centered">
+  <Container hasTextAlign='left'>
 
-    <Title isSize="1">ConsenSys Design</Title>
-    <Title isSize="3"><em>Launching October 2018</em></Title>
+    <Title isSize='1' className='dark'>ConsenSys</Title>
+    <Title isSize='1'>Product Design Circle</Title>
 
-    <EmailCaptureForm />
+    <p className='dark'>We're a group of product designers, design thinking facilitators, design researchers, and strategists in a remote, flat organization on a highly ambiguous and complex technological front line.</p>
 
   </Container>
 )
