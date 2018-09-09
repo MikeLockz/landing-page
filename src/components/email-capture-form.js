@@ -1,18 +1,31 @@
 import React from 'react'
 import MailchimpForm from './mailchimp-form'
-import { Columns, Column, Box } from 'bloomer'
+import {
+  Section,
+  Container,
+  Columns,
+  Column,
+  Content,
+} from 'bloomer'
 
 class EmailCaptureForm extends React.Component {
   render() {
     const { signupMessage, confirmMessage } = this.props
 
     return (
-      <Columns isCentered>
-        <Column isSize='1/3' hasTextAlign='centered'>
-          <p>Sign up below to be the first to access our learnings and resources.</p>
-          <MailchimpForm />
-        </Column>
-      </Columns>
+      <Section>
+        <Container>
+          <Columns>
+            <Column isSize='1/3'>
+              <Content>
+                <p style={{ color: '#BBBEC2' }}>Sign up below to be the first to access our learnings and resources.</p>
+              </Content>
+
+              <MailchimpForm />
+            </Column>
+          </Columns>
+      </Container>
+      </Section>
     )
   }
 }

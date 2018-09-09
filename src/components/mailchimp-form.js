@@ -1,6 +1,8 @@
 import React from 'react'
 import addToMailchimp from 'gatsby-plugin-mailchimp'
 import {
+  Columns,
+  Column,
   Field,
   FieldLabel,
   FieldBody,
@@ -65,34 +67,32 @@ export default class AppEmail extends React.Component {
     const msg = this.state.msg
 
     return (
-      <div>
-        <form onSubmit={e => this._handleSubmit(e)}>
-          <Field isHorizontal>
-            <FieldLabel isNormal>
-              <Label>Email</Label>
-            </FieldLabel>
-            <FieldBody>
-              <Control>
-                <Input
-                  onChange={({ target }) => this._handleEmailChange(target)}
-                  type='email'
-                  placeholder='name@example.com'
-                  name='email'
-                  id='email'
-                />
-              </Control>
+      <Columns>
+        <Column>
+          <form onSubmit={e => this._handleSubmit(e)}>
+            <Field isHorizontal isGrouped>
+                <Control style={{ display: 'flex', flexGrow: '1' }}>
+                  <Input
+                    onChange={({ target }) => this._handleEmailChange(target)}
+                    type='email'
+                    placeholder='name@example.com'
+                    name='email'
+                    id='email'
+                  />
+                </Control>
 
-              <Control>
-                <Button isColor='dark' type='submit'>
-                  Sign Up
-                </Button>
-              </Control>
-            </FieldBody>
-          </Field>
-        </form>
+                <Control>
+                  <Button isColor='dark' type='submit'>
+                    Sign Up
+                  </Button>
+                </Control>
 
-        <p className={` ${this.state.status} `}>{msg}</p>
-      </div>
+            </Field>
+          </form>
+
+          <p className={` ${this.state.status} `}>{msg}</p>
+        </Column>
+      </Columns>
     )
   }
 }
