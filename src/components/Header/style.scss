@@ -23,26 +23,26 @@ aside {
 }
 
 
-#consensys-circle-outer {
+#consensys-circle-outer-image {
   animation: rotatecircle 155s infinite linear;
   -moz-animation: rotatecircle 155s infinite linear;
--webkit-animation: rotatecircle 155s infinite linear;
+  -webkit-animation: rotatecircle 155s infinite linear;
 }
 
-#consensys-circle-middle {
+#consensys-circle-middle-image {
   animation: counterrotatecircle 165s infinite linear;
   -moz-animation: counterrotatecircle 165s infinite linear;
--webkit-animation: counterrotatecircle 165s infinite linear;
+  -webkit-animation: counterrotatecircle 165s infinite linear;
 }
-#consensys-circle-inner {
-  animation: otatecircle 145s infinite linear;
+#consensys-circle-inner-image {
+  animation: rotatecircle 145s infinite linear;
   -moz-animation: rotatecircle 145s infinite linear;
--webkit-animation: rotatecircle 145s infinite linear;
+  -webkit-animation: rotatecircle 145s infinite linear;
 }
 
 @keyframes rotatecircle {
-    0% { -moz-transform:rotate(0deg); }
-  100% { -moz-transform:rotate(360deg); }
+    0% { transform:rotate(0deg); }
+  100% { transform:rotate(360deg); }
 }
 @-moz-keyframes rotatecircle {
     0% { -moz-transform:rotate(0deg); }
@@ -55,8 +55,8 @@ aside {
 
 
 @keyframes counterrotatecircle {
-    0% { -moz-transform:rotate(0deg); }
-	100% { -moz-transform:rotate(-360deg); }
+    0% { transform:rotate(0deg); }
+	100% { transform:rotate(-360deg); }
 }
 @-moz-keyframes counterrotatecircle {
     0% { -moz-transform:rotate(0deg); }
