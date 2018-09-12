@@ -42,7 +42,7 @@ const TemplateWrapper = ({ children, location }) => (
       <meta property='og:type' content='website' />
       <meta property='og:title' content={config.siteTitle} />
       <meta property='og:description' content={config.siteDescription} />
-      <meta property='og:image' content={location + siteImage} />
+      <meta property='og:image' content={location.href + siteImage} />
 
       {/* Twitter Card tags */}
       <meta name='twitter:card' content='summary_large_image' />
