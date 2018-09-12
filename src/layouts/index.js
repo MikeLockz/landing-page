@@ -23,7 +23,7 @@ import EmailCaptureForm from '../components/email-capture-form'
 import AppHeader from '../components/Header'
 import AppFooter from '../components/Footer'
 
-const TemplateWrapper = ({ children }) => (
+const TemplateWrapper = ({ children, location }) => (
   <div>
     <Helmet>
       <title>{config.siteTitle}</title>
@@ -42,7 +42,7 @@ const TemplateWrapper = ({ children }) => (
       <meta property='og:type' content='website' />
       <meta property='og:title' content={config.siteTitle} />
       <meta property='og:description' content={config.siteDescription} />
-      <meta property='og:image' content={siteImage} />
+      <meta property='og:image' content={location + siteImage} />
 
       {/* Twitter Card tags */}
       <meta name='twitter:card' content='summary_large_image' />
