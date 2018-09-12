@@ -23,7 +23,7 @@ import EmailCaptureForm from '../components/email-capture-form'
 import AppHeader from '../components/Header'
 import AppFooter from '../components/Footer'
 
-const TemplateWrapper = ({ children, location }) => (
+const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet>
       <title>{config.siteTitle}</title>
