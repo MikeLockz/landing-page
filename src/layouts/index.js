@@ -30,7 +30,7 @@ const TemplateWrapper = ({ children, location }) => (
 
       {/* General tags */}
       <meta name='description' content={config.siteDescription} />
-      <meta name='image' content={siteImage} />
+      <meta name='image' content={config.siteUrl + siteImage} />
 
       {/* Schema.org tags */}
       <script type='application/ld+json'>
@@ -42,7 +42,7 @@ const TemplateWrapper = ({ children, location }) => (
       <meta property='og:type' content='website' />
       <meta property='og:title' content={config.siteTitle} />
       <meta property='og:description' content={config.siteDescription} />
-      <meta property='og:image' content={location.href + siteImage} />
+      <meta property='og:image' content={config.siteUrl + siteImage} />
 
       {/* Twitter Card tags */}
       <meta name='twitter:card' content='summary_large_image' />
@@ -52,7 +52,7 @@ const TemplateWrapper = ({ children, location }) => (
       />
       <meta name='twitter:title' content={config.siteTitle} />
       <meta name='twitter:description' content={config.siteDescription} />
-      <meta name='twitter:image' content={siteImage} />
+      <meta name='twitter:image' content={config.siteUrl + siteImage} />
     </Helmet>
 
     <Hero isColor="primary">
