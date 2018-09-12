@@ -8,7 +8,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
-        endpoint: 'https://Mikelock.us19.list-manage.com/subscribe/post?u=4fc8f5643bc55f08ed4e49be0&amp;id=1b198137d5',
+        endpoint: 'https://consensys.us11.list-manage.com/subscribe/post?u=947c9b18fc27e0b00fc2ad055&amp;id=1cafe40383',
       },
     },
   ],
