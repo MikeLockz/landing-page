@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 require('typeface-roboto')
 import './all.sass'
 import config from '../meta/config'
+import siteImage from '../img/consensys-design.png'
 
 import {
   Container,
@@ -29,7 +30,7 @@ const TemplateWrapper = ({ children }) => (
 
       {/* General tags */}
       <meta name='description' content={config.siteDescription} />
-      <meta name='image' content={config.siteImage} />
+      <meta name='image' content={siteImage} />
 
       {/* Schema.org tags */}
       <script type='application/ld+json'>
@@ -41,7 +42,7 @@ const TemplateWrapper = ({ children }) => (
       <meta property='og:type' content='website' />
       <meta property='og:title' content={config.siteTitle} />
       <meta property='og:description' content={config.siteDescription} />
-      <meta property='og:image' content={config.siteImage} />
+      <meta property='og:image' content={siteImagesiteImage} />
 
       {/* Twitter Card tags */}
       <meta name='twitter:card' content='summary_large_image' />
@@ -51,7 +52,7 @@ const TemplateWrapper = ({ children }) => (
       />
       <meta name='twitter:title' content={config.siteTitle} />
       <meta name='twitter:description' content={config.siteDescription} />
-      <meta name='twitter:image' content={config.siteImage} />
+      <meta name='twitter:image' content={siteImage} />
     </Helmet>
 
     <Hero isColor="primary">
