@@ -4,11 +4,7 @@ import {
   Container,
   Columns,
   Column,
-  Navbar,
-  NavbarMenu,
-  NavbarStart,
-  NavbarEnd,
-  NavbarItem,
+  Content,
   Icon,
 } from 'bloomer'
 import '../../css/font-awesome.min.css'
@@ -18,25 +14,22 @@ const AppFooter = () => (
     <Container>
       <Columns>
         <Column>
-          <Navbar className='is-fixed-bottom' style={{ margin: '0', backgroundColor: 'inherit' }}>
-            <Container style={{ borderTop: 'solid 1px #BBBEC2' }}>
-            <NavbarMenu>
-                <NavbarStart>
-                    <NavbarItem style={{ color: '#BBBEC2' }}>
-                        © 2018 Consensys, Inc.
-                    </NavbarItem>
-                </NavbarStart>
-                <NavbarEnd>
-                    <NavbarItem href="https://twitter.com/ConsensysDesign" isHidden='touch' title='ConsenSys Product Design Circle on Twitter'>
-                        <Icon className='fa fa-twitter' style={{ color: '#BBBEC2' }} />
-                    </NavbarItem>
-                    <NavbarItem href="https://www.instagram.com/consensysdesign/" isHidden='touch' title='ConsenSys Product Design Circle on Instagram'>
-                        <Icon className='fa fa-instagram' style={{ color: '#BBBEC2' }} />
-                    </NavbarItem>
-                </NavbarEnd>
-            </NavbarMenu>
-            </Container>
-          </Navbar>
+          <Container style={{ borderTop: 'solid 1px #BBBEC2', color: '#BBBEC2', paddingTop: '1rem' }}>
+            <Content>
+              <div className='is-pulled-left'>
+                © 2018 Consensys, Inc.
+              </div>
+
+              <div className='is-pulled-right'>
+                <a href="https://twitter.com/ConsensysDesign" title='ConsenSys Product Design Circle on Twitter'>
+                    <Icon className='fa fa-twitter' style={{ color: '#BBBEC2' }} />
+                </a>
+                <a href="https://www.instagram.com/consensysdesign/" title='ConsenSys Product Design Circle on Instagram'>
+                    <Icon className='fa fa-instagram' style={{ color: '#BBBEC2' }} />
+                </a>
+              </div>
+            </Content>
+          </Container>
         </Column>
       </Columns>
     </Container>

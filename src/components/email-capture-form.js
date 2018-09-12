@@ -16,15 +16,16 @@ class EmailCaptureForm extends React.Component {
       <Section>
         <Container>
           <Columns>
-            <Column isSize='1/3'>
+            <Column isSize={{ mobile: 11, tablet: 6, desktop: 4 }}>
               <Content>
                 <p style={{ color: '#BBBEC2' }}>Sign up below to be the first to access our learnings and resources.</p>
               </Content>
-
-              <MailchimpForm />
             </Column>
           </Columns>
-      </Container>
+
+          <MailchimpForm />
+
+        </Container>
       </Section>
     )
   }

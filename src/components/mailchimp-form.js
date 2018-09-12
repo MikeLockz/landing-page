@@ -67,32 +67,39 @@ export default class AppEmail extends React.Component {
     const msg = this.state.msg
 
     return (
+      <form onSubmit={e => this._handleSubmit(e)}>
+      <Columns>
+        <Column isSize={{ mobile: 12, tablet: 6, desktop: 4 }}>
+          <Field>
+            <Control style={{ display: 'flex', flexGrow: '1' }}>
+              <Input
+                onChange={({ target }) => this._handleEmailChange(target)}
+                type='email'
+                placeholder='name@example.com'
+                name='email'
+                id='email'
+              />
+            </Control>
+          </Field>
+        </Column>
+
+        <Column isSize={{ mobile: 12, tablet: 3, desktop: 2 }}>
+          <Field>
+            <Control>
+              <Button isColor='dark' type='submit' className='is-flex-mobile' style={{ width: '100%' }}>
+                Join the List
+              </Button>
+            </Control>
+          </Field>
+        </Column>
+      </Columns>
+
       <Columns>
         <Column>
-          <form onSubmit={e => this._handleSubmit(e)}>
-            <Field isHorizontal isGrouped>
-                <Control style={{ display: 'flex', flexGrow: '1' }}>
-                  <Input
-                    onChange={({ target }) => this._handleEmailChange(target)}
-                    type='email'
-                    placeholder='name@example.com'
-                    name='email'
-                    id='email'
-                  />
-                </Control>
-
-                <Control>
-                  <Button isColor='dark' type='submit'>
-                    Sign Up
-                  </Button>
-                </Control>
-
-            </Field>
-          </form>
-
           <p className={` ${this.state.status} `}>{msg}</p>
         </Column>
       </Columns>
+      </form>
     )
   }
 }

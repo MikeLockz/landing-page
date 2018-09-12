@@ -3,12 +3,20 @@ import Link from 'gatsby-link'
 import {
   Container,
 } from 'bloomer'
-import circle from '../../img/consensys-design-circle.svg'
-import './style.css'
+import inner from '../../img/consensys-design-circle-inner.svg'
+import middle from '../../img/consensys-design-circle-middle.svg'
+import outer from '../../img/consensys-design-circle-outer.svg'
+import './style.scss'
 
 const AppHeader = () => (
   <Container>
-    <img id='consensys-circle' src={circle} alt='Consensys Design Circle' />
+    <aside id='consensys-circle-container'>
+      <div id='circle-wrapper'>
+        <img id='consensys-circle-inner-image' className='consensys-circle-image' src={inner} alt='Consensys Design Circle' />
+        <img id='consensys-circle-middle-image' className='consensys-circle-image' src={middle} alt='Consensys Design Circle' />
+        <img id='consensys-circle-outer-image' className='consensys-circle-image' src={outer} alt='Consensys Design Circle' />
+      </div>
+    </aside>
   </Container>
 )
 

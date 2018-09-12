@@ -10,7 +10,6 @@ $dark: #6141ED
 body, html
   background-color: #242A30
 
-
 input.input
   background-color: #31383F
   color: #BBBEC2
@@ -19,3 +18,32 @@ input.input
     color: #BBBEC2
   &:active, &:focus
     border-color: $dark
+
+
+
+#footer > .container
+  left: 0
+  position: fixed
+  right: 0
+  z-index: 30
+  bottom: 0
+  margin-bottom: 1rem
+
+
++mobile
+  #consensys-circle-container
+    display: none
+    
+  #footer
+    padding-bottom: 0
+
+  #footer > .container
+    position: initial
+
++tablet
+  #footer > .container
+    margin: 0 1rem
+
++desktop
+  #footer > .container
+    margin: 0 auto
