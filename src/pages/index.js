@@ -17,7 +17,7 @@ const IndexPage = () => (
         <Column isSize="2/3">
           <Content>
             <Title isSize='1' style={{ color: '#393E43' }}>ConsenSys</Title>
-            <Subtitle isSize='1'>Product Design Circle</Subtitle>
+            <Subtitle isSize='1'> Design</Subtitle>
 
             <p style={{ color: '#407969' }}>We’re a group of product designers, design thinking facilitators, design researchers, and strategists in a remote, flat organization on a highly ambiguous and complex technological front line.</p>
           </Content>

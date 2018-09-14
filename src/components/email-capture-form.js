@@ -13,7 +13,7 @@ class EmailCaptureForm extends React.Component {
     const { signupMessage, confirmMessage } = this.props
 
     return (
-      <Section>
+      <Section id="email-capture-form">
         <Container>
           <Columns>
             <Column isSize={{ mobile: 11, tablet: 6, desktop: 4 }}>

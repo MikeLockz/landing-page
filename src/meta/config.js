@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: 'ConsenSys Product Design Circle', // Site title.
+  siteTitle: 'ConsenSys Design', // Site title.
   siteTitleAlt: 'ConsenSys Design', // Alternative site title for SEO.
   siteLogo: '/img/consensys-design.png', // Logo used for SEO and manifest.
   siteImage: '/img/consensys-design.png', // Graphic used for Open Graph website preview.
