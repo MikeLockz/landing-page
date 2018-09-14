@@ -5,7 +5,7 @@ module.exports = {
   siteImage: '/img/consensys-design.png', // Graphic used for Open Graph website preview.
   siteUrl: 'https://consensys.design', // Domain of your website without pathPrefix.
   pathPrefix: '/', // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-business/.
-  siteDescription: 'Blockchain is complicated and complex. We’re here to fix that. The Product Design Circle at ConsenSys is passionate group of designers, researchers, facilitators, and strategists.', // Website description used for RSS feeds/meta description tag.
+  siteDescription: 'Blockchain is complicated and complex. We’re here to fix that. The Design Circle at ConsenSys is passionate group of designers, researchers, facilitators, and strategists.', // Website description used for RSS feeds/meta description tag.
   siteRss: '/rss.xml',
   siteFBAppID: 'fb-app', // FB Application ID for using app insights
   googleAnalyticsID: 'UA-125405131-1', // GTM tracking ID.
