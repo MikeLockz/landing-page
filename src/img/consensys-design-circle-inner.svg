@@ -1,9 +1,11 @@
-<svg id='consensys-circle-inner' class='consensys-circle' viewBox='0 0 747 747' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
-    <g id='' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round' stroke-linejoin='round'>
-        <g id='' fill-rule='nonzero' stroke-width='20'>
-            <g id=''>
-                <path d='M279.550691,104.176205 C235.598014,118.394385 196.532331,143.476255 165.519562,176.255894 C132.609991,211.040402 108.768522,254.493096 97.7782314,302.830903 C93.3423273,322.341022 91,342.646971 91,363.5 C91,394.637718 96.2225527,424.555643 105.839493,452.425611 M188.235979,572.167616 C235.614934,612.003668 296.755145,636 363.5,636 M411.908066,631.713235 C445.357432,625.71624 476.689469,613.615352 504.710314,596.604437 M608.138498,483.672988 C625.979112,447.42327 636,406.631887 636,363.5 M623.716688,282.363217 C589.182872,171.490498 485.741218,91 363.5,91' stroke='#6141ED'></path>
-            </g>
+
+<svg width="509px" height="509px" viewBox="0 0 509 509" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.9" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Circle-Pattern" transform="translate(-66.000000, -66.000000)" fill-rule="nonzero" stroke="#6141ED" stroke-width="28">
+            <path d="M246.408959,91.6289076 C207.617697,104.17743 173.139544,126.313906 145.768641,155.244193 C116.72368,185.943914 95.6819432,224.293907 85.9822556,266.955347 C82.067265,284.17437 80,302.095767 80,320.5 C80,347.981178 84.6092621,374.385806 93.0968739,398.98297 M165.817442,504.663529 C207.63263,539.821586 261.593073,561 320.5,561 M363.223449,557.216635 C392.744816,551.923874 420.397495,541.244008 445.127819,526.230705 M536.410308,426.560931 C552.155877,394.56806 561,358.566858 561,320.5 M550.159132,248.891206 C519.680663,151.038402 428.386286,80 320.5,80" id="Oval-Copy-2"></path>
         </g>
     </g>
 </svg>
