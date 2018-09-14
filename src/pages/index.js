@@ -11,7 +11,7 @@ import {
 } from 'bloomer'
 
 const IndexPage = () => (
-  <Section style={{ padding: '5rem 1.5rem' }}>
+  <Section style={{ padding: '5rem 0' }}>
     <Container hasTextAlign='left'>
       <Columns >
         <Column isSize="2/3">
