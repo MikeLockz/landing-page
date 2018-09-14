@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-require('typeface-roboto')
+import '../css/PxGroteskRegular-Regular.css'
 import './all.sass'
 import config from '../meta/config'
 import siteImage from '../img/consensys-design.png'
