@@ -8,20 +8,12 @@ import siteImage from '../img/consensys-design.png'
 
 import {
   Container,
-  Hero,
-  HeroHeader,
-  HeroBody,
-  HeroFooter,
   Tabs,
   TabList,
   Tab,
   TabLink,
   Title,
 } from 'bloomer'
-
-import EmailCaptureForm from '../components/email-capture-form'
-import AppHeader from '../components/Header'
-import AppFooter from '../components/Footer'
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -55,18 +47,8 @@ const TemplateWrapper = ({ children }) => (
       <meta name='twitter:image' content={config.siteUrl + siteImage} />
     </Helmet>
 
-    <Hero isColor="primary">
-      <HeroHeader>
-        <AppHeader />
-      </HeroHeader>
+    {children()}
 
-      <HeroBody>{children()}</HeroBody>
-
-    </Hero>
-
-    <EmailCaptureForm />
-
-    <AppFooter />
   </div>
 )
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'gatsby-link'
 import {
   Footer,
   Container,
@@ -17,7 +18,7 @@ const AppFooter = () => (
           <Container style={{ borderTop: 'solid 1px #BBBEC2', color: '#BBBEC2', paddingTop: '1rem' }}>
             <Content>
               <div className='is-pulled-left'>
-                © 2018 Consensys, Inc.
+                © 2018 Consensys, Inc. | <Link to="privacy-policy" title="ConsenSys Privacy Policy" style={{ color: 'rgb(187, 190, 194)', fontSize: '.8em' }}>Privacy Policy</Link>
               </div>
 
               <div className='is-pulled-right'>
