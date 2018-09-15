@@ -3,6 +3,9 @@ $family-sans-serif: 'Inter UI'
 $primary: #93D6C4
 $dark: #6141ED
 
+$containerWidth: 560px
+
+
 @import "~bulma"
 
 .title
@@ -25,6 +28,13 @@ input.input
   &:active, &:focus
     border-color: $dark
 
+input.input
+  height: 2.375rem
+
+button.button
+  padding-left: 15px
+  padding-right: 15px
+  height: 2.375rem
 
 
 #footer > .container
@@ -57,6 +67,9 @@ input.input
     padding-top: 1.5rem !important
     padding-bottom: 1.5rem !important
 
+    button
+      width: 100%
+
 
   #footer
     padding-bottom: 0
@@ -65,12 +78,24 @@ input.input
     position: initial
 
 +tablet
+  .container
+    max-width: $containerWidth
   #footer > .container
     margin: 0 1rem
 
   #consensys-circle-container
-    right: -460px
+    right: -760px
 
 +desktop
+  .container
+    max-width: $containerWidth
   #footer > .container
     margin: 0 auto
+
++widescreen
+  .container
+    max-width: $containerWidth
+
++fullhd
+  .container
+    max-width: $containerWidth

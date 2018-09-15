@@ -69,7 +69,7 @@ export default class AppEmail extends React.Component {
     return (
       <form onSubmit={e => this._handleSubmit(e)}>
       <Columns>
-        <Column isSize={{ mobile: 12, tablet: 6, desktop: 4 }}>
+        <Column isSize={{ mobile: 12, tablet: 10, desktop: 8 }}>
           <Field>
             <Control style={{ display: 'flex', flexGrow: '1' }}>
               <Input
@@ -78,6 +78,7 @@ export default class AppEmail extends React.Component {
                 placeholder='name@example.com'
                 name='email'
                 id='email'
+                style={{ minWidth: '350px' }}
               />
             </Control>
           </Field>
@@ -86,7 +87,7 @@ export default class AppEmail extends React.Component {
         <Column isSize={{ mobile: 12, tablet: 3, desktop: 2 }}>
           <Field>
             <Control>
-              <Button isColor='dark' type='submit' className='is-flex-mobile' style={{ width: '100%' }}>
+              <Button isColor='dark' type='submit' className='is-flex-mobile' style={{  }}>
                 Join the List
               </Button>
             </Control>

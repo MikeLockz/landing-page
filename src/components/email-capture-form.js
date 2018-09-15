@@ -16,7 +16,7 @@ class EmailCaptureForm extends React.Component {
       <Section id="email-capture-form" style={{ backgroundColor: '#242A30'}}>
         <Container>
           <Columns>
-            <Column isSize={{ mobile: 11, tablet: 6, desktop: 4 }}>
+            <Column isSize={{ mobile: 12, tablet: 10, desktop: 8 }}>
               <Content>
                 <p style={{ color: '#BBBEC2' }}>Sign up below to be the first to access our learnings and resources.</p>
               </Content>

@@ -28,7 +28,7 @@ const IndexPage = () => (
         <Section style={{ padding: '5rem 0' }}>
           <Container hasTextAlign='left'>
             <Columns >
-              <Column isSize="2/3">
+              <Column>
                 <Content>
                   <Title isSize='1' style={{ color: '#393E43' }}>ConsenSys</Title>
                   <Subtitle isSize='1'> Design</Subtitle>
