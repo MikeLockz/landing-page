@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import '../css/inter-ui.css'
 import '../css/PxGroteskRegular-Regular.css'
 import './all.sass'
 import config from '../meta/config'
