@@ -44,6 +44,8 @@ input.input
   color: #BBBEC2
   border-color: transparent
   box-shadow: none
+  transition: all .15s ease
+
   &::placeholder
     color: #BBBEC2
   &:hover
@@ -79,6 +81,12 @@ button.button.is-dark
 
 #footer
   padding: 0
+
+  // width: $containerWidth
+  // max-width: $containerWidth
+  // margin-left: auto
+  // margin-right: auto
+
   & > .container
   margin-bottom: 1rem
   font-size: 14px
@@ -87,6 +95,10 @@ button.button.is-dark
     color: #BBBEC2
     &:hover
       color: #fff
+  #copyright a
+    border-left: 1px solid #33383E
+    margin-left: 21px
+    padding-left: 21px
 
 +mobile
   .hero-body
@@ -116,9 +128,16 @@ button.button.is-dark
 
   #footer
     padding-bottom: 0
+    margin-left: 24px
+    margin-right: 24px
 
   #footer > .container
     position: initial
+
+  #social-icons
+    font-size: 20px
+    a
+      margin-left: 15px
 
 +tablet
   .container

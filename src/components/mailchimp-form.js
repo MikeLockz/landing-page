@@ -69,7 +69,7 @@ export default class AppEmail extends React.Component {
     return (
       <form onSubmit={e => this._handleSubmit(e)}>
       <Columns>
-        <Column isSize={{ mobile: 12, tablet: 10, desktop: 8 }}>
+        <Column isSize={{ mobile: 12, tablet: 9, desktop: 8 }}>
           <Field>
             <Control style={{ display: 'flex', flexGrow: '1' }}>
               <Input
