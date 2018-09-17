@@ -1,7 +1,9 @@
 $family-serif: PxGroteskRegular
 $family-sans-serif: 'Inter UI'
 $primary: #93D6C4
-$dark: #6141ED
+$dark: #6137f1
+$dark-hover: #704cf2
+$dark-active: #4327a8
 
 $containerWidth: 560px
 
@@ -25,8 +27,8 @@ input.input
   border-color: transparent
   &::placeholder
     color: #BBBEC2
-  &:active, &:focus
-    border-color: $dark
+  &:hover, &:active, &:focus
+    border-color: transparent
 
 input.input
   height: 2.375rem
@@ -35,7 +37,14 @@ button.button
   padding-left: 15px
   padding-right: 15px
   height: 2.375rem
-
+  &:hover, &:active, &:focus
+    border-color: transparent
+  &:hover
+    margin-top: -2px
+    margin-bottom: 2px
+    background-color: $dark-hover
+  &:active, &:foxus
+    background-color: $dark-active
 
 #footer > .container
   left: 0
@@ -44,7 +53,12 @@ button.button
   z-index: 30
   bottom: 0
   margin-bottom: 1rem
+  font-size: 14px
 
+  a
+    color: #BBBEC2
+    &:hover
+      color: #fff
 
 +mobile
   .hero-body
@@ -80,8 +94,9 @@ button.button
 +tablet
   .container
     max-width: $containerWidth
+    width: $containerWidth
   #footer > .container
-    margin: 0 1rem
+    margin: 0 auto
 
   #consensys-circle-container
     right: -760px
