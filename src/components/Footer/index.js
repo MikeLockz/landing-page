@@ -15,20 +15,21 @@ const AppFooter = () => (
     <Container>
       <Columns>
         <Column>
-          <Container style={{ borderTop: 'solid 1px #33383E', color: '#BBBEC2', paddingTop: '1rem' }}>
+          <Container style={{ borderTop: 'solid 1px #33383E', color: '#BBBEC2', paddingTop: '21px', paddingBottom: '14px' }}>
             <Content>
-              <div className='is-pulled-left'>
-                © 2018 Consensys, Inc. | <Link to="privacy-policy" title="ConsenSys Privacy Policy">Privacy Policy</Link>
-              </div>
-
-              <div className='is-pulled-right'>
-                <a href="https://twitter.com/ConsensysDesign" title='ConsenSys Product Design Circle on Twitter'>
-                    <Icon className='fa fa-twitter' />
-                </a>
-                <a href="https://www.instagram.com/consensysdesign/" title='ConsenSys Product Design Circle on Instagram'>
-                    <Icon className='fa fa-instagram' />
-                </a>
-              </div>
+              <Columns>
+                <Column>
+                  © 2018 Consensys, Inc. | <Link to="privacy-policy" title="ConsenSys Privacy Policy">Privacy Policy</Link>
+                </Column>
+                <Column style={{ textAlign: 'right' }}>
+                  <a href="https://twitter.com/ConsensysDesign" title='ConsenSys Product Design Circle on Twitter'>
+                      <Icon className='fa fa-twitter' />
+                  </a>
+                  <a href="https://www.instagram.com/consensysdesign/" title='ConsenSys Product Design Circle on Instagram'>
+                      <Icon className='fa fa-instagram' />
+                  </a>
+                </Column>
+              </Columns>
             </Content>
           </Container>
         </Column>
