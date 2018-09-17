@@ -18,7 +18,7 @@ import {
 } from 'bloomer'
 
 const IndexPage = () => (
-  <div>
+  <div id='page-container'>
     <Hero isColor="primary">
       <HeroHeader>
         <AppHeader />
