@@ -30,15 +30,19 @@ aside {
 }
 
 #consensys-circle-middle-image {
-  top: 40px;
-  left: 40px;
+  top: 45px;
+  left: 45px;
+  height: 579px;
+  width: 579px;
   animation: counterrotatecircle 165s infinite linear;
   -moz-animation: counterrotatecircle 165s infinite linear;
   -webkit-animation: counterrotatecircle 165s infinite linear;
 }
 #consensys-circle-inner-image {
-  top: 80px;
-  left: 80px;
+  top: 90px;
+  left: 90px;
+  height: 489px;
+  width: 489px;
   animation: rotatecircle 145s infinite linear;
   -moz-animation: rotatecircle 145s infinite linear;
   -webkit-animation: rotatecircle 145s infinite linear;
