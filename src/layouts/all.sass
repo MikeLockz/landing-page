@@ -46,7 +46,10 @@ input.input
   box-shadow: none
   &::placeholder
     color: #BBBEC2
-  &:hover, &:active, &:focus
+  &:hover
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.10)
+    border-color: transparent
+  &:focus, &:active
     border-color: transparent
     box-shadow: none
     background-color: white
@@ -60,6 +63,8 @@ button.button.is-dark
   padding-right: 15px
   height: 2.375rem
   background-color: $dark
+  transition: all .15s ease
+
   &:hover, &:active, &:focus
     border-color: transparent
   &:hover
