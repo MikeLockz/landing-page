@@ -100,7 +100,24 @@ button.button.is-dark
     .fa
       font-size: 20px
 
+
+
+// tiny mobile
+@media screen and (max-width: 375px)
+
+  #footer #copyright a
+    display: block
+    border-left: none
+    padding-left: 0
+    margin-left: 0
+
 +mobile
+  .hero
+    display: block
+  .title.is-1,
+  .subtitle.is-1
+    font-size: 50px
+
   .hero-body
     padding-top: 1.5rem !important
     padding-bottom: 1.5rem !important
@@ -130,9 +147,12 @@ button.button.is-dark
     padding-bottom: 0
     margin-left: 24px
     margin-right: 24px
+    align-items: center
 
-  #footer > .container
+    & > .container
     position: initial
+
+
 
 +tablet
   .container
